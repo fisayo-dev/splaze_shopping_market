@@ -1,7 +1,7 @@
-const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+import { Header } from "../components";
 
-export default Home
+const Home = () => {
+  return <Header />;
+};
+
+export default Home;
