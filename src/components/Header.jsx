@@ -16,11 +16,11 @@ const Header = () => {
             <div className="flex px-4 items-center justify-center">
               <select className="flex text-center cursor-pointer" id="">
                 <option>All</option>
-                <option>Products</option>
+                <option>Fashion</option>
                 <option>Electronics</option>
-                <option>Gadgets</option>
-                <option>Commodities</option>
-                <option>Food Stuffs</option>
+                <option>Home and Kitchen</option>
+                <option>Health & Beauty</option>
+                <option>Sports & Outdoors</option>
               </select>
             </div>
             <input
