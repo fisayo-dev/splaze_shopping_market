@@ -6,10 +6,19 @@ const Landing = () => {
           <div className="mt-5">
             <div className="flex gap-10 items-center">
               <div className="grid gap-4 text-left">
-                <h2 className="text-3xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquid.
+                <h2 className="text-4xl capitalize font-bold">
+                  Your All-in-one online store.
                 </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                  sint aspernatur quis, inventore doloribus recusandae mollitia
+                  aliquam cumque voluptas fugiat?
+                </p>
+                <div>
+                  <button className="px-5 py-3 rounded-full bg-yellow-400">
+                    Start purchasing
+                  </button>
+                </div>
               </div>
             </div>
           </div>

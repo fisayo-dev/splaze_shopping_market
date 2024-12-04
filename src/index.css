@@ -17,6 +17,9 @@ input, select{
   outline: none;
   background: transparent;
 }
+button {
+  outline: none;
+}
 
 .app-gray-color {
   background: var(--app-gray);
