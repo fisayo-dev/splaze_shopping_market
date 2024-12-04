@@ -1,7 +1,10 @@
-import { Header } from "../components";
+import { Header, Landing } from "../components";
 
 const Home = () => {
-  return <Header />;
+    return <>
+        <Header />
+        <Landing />
+  </>
 };
 
 export default Home;
