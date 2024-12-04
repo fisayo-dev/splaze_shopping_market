@@ -18,7 +18,7 @@ const Header = () => {
                 <option>All</option>
                 <option>Fashion</option>
                 <option>Electronics</option>
-                <option>Home and Kitchen</option>
+                <option>Home & Kitchen</option>
                 <option>Health & Beauty</option>
                 <option>Sports & Outdoors</option>
               </select>
