@@ -8,14 +8,18 @@ const Header = () => {
   return (
     <div className="sticky top-0">
       <div className="py-5">
-        <div className="container flex items-center justify-between gap-16 md:px-20 px-5">
+        <div className="container flex items-center gap-16 md:px-20 px-5">
           <div className="flex text-green-800 items-center gap-2">
             <ShoppingCartIcon className="w-7 h-7" />
             <h2 className="text-2xl font-bold">Splaze</h2>
           </div>
           <div className="flex px-5 py-3 space-x-4 border-2 w-full rounded-2xl">
-                      <SearchNormal />
-                      <input type="text" placeholder="Search for products, brand and categories" className="w-full"/>
+            <SearchNormal />
+            <input
+              type="text"
+              placeholder="Search for products, brand and categories"
+              className="w-full"
+            />
           </div>
           <div className="flex items-center space-x-7">
             <div className="flex items-center gap-2">
@@ -24,7 +28,7 @@ const Header = () => {
             </div>
             <User className="w-6 h-6 " />
             <div className="rounded-full cursor-pointer hover:bg-green-600 bg-green-400 p-3">
-              <ShoppingCartIcon className="h-6 w-6 text-white"/>
+              <ShoppingCartIcon className="h-6 w-6 text-white" />
             </div>
           </div>
         </div>
