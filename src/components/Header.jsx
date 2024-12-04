@@ -6,7 +6,7 @@ import { SearchNormal, User } from "iconsax-react";
 const Header = () => {
   return (
     <div className="sticky top-0">
-      <div className="py-6 ">
+      <div className="py-6 bg-white">
         <div className="container mx-auto flex items-center justify-between gap-20 md:px-16 px-5">
           <div className="flex text-black items-center gap-2">
             <ShoppingCartIcon className="w-10 h-10" />
