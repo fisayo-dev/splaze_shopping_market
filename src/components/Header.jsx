@@ -7,9 +7,9 @@ import { SearchNormal, User } from "iconsax-react";
 const Header = () => {
   return (
     <div className="sticky top-0">
-      <div className="py-5">
-        <div className="container flex items-center gap-16 md:px-20 px-5">
-          <div className="flex text-green-800 items-center gap-2">
+      <div className="py-6">
+        <div className="container flex items-center gap-20 md:px-20 px-5">
+          <div className="flex text-black items-center gap-2">
             <ShoppingCartIcon className="w-7 h-7" />
             <h2 className="text-2xl font-bold">Splaze</h2>
           </div>
@@ -27,8 +27,8 @@ const Header = () => {
               <p className="">ENG</p>
             </div>
             <User className="w-6 h-6 " />
-            <div className="rounded-full cursor-pointer hover:bg-green-600 bg-green-400 p-3">
-              <ShoppingCartIcon className="h-6 w-6 text-white" />
+            <div className="rounded-full cursor-pointer hover:bg-yellow-400 bg-yellow-300 p-3">
+              <ShoppingCartIcon className="h-6 w-6 text-black" />
             </div>
           </div>
         </div>
