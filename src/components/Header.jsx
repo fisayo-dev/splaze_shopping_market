@@ -10,7 +10,7 @@ const Header = () => {
       <div className="py-6">
         <div className="container flex items-center gap-20 md:px-20 px-5">
           <div className="flex text-black items-center gap-2">
-            <ShoppingCartIcon className="w-7 h-7" />
+            <ShoppingCartIcon className="w-10 h-10" />
             <h2 className="text-2xl font-bold">Splaze</h2>
           </div>
           <div className="flex px-5 py-3 space-x-4 border-2 w-full rounded-2xl">
