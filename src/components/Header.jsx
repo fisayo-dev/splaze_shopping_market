@@ -8,20 +8,20 @@ const Header = () => {
   return (
     <div className="sticky top-0">
       <div className="py-6">
-        <div className="container flex items-center gap-20 md:px-20 px-5">
+        <div className="container mx-auto flex items-center gap-20 md:px-20 px-5">
           <div className="flex text-black items-center gap-2">
             <ShoppingCartIcon className="w-10 h-10" />
             <h2 className="text-2xl font-bold">Splaze</h2>
           </div>
           <div className="flex px-5 py-3 space-x-4 border-2 w-full rounded-2xl">
-            <SearchNormal />
+            <SearchNormal  className="text-slate-600 "/>
             <input
               type="text"
               placeholder="Search for products, brand and categories"
-              className="w-full"
+              className="text-slate-500 w-full"
             />
           </div>
-          <div className="flex items-center space-x-7">
+          <div className="flex items-center space-x-6">
             <div className="flex items-center gap-2">
               <GlobeEuropeAfricaIcon className="w-6 h-6" />
               <p className="">ENG</p>
