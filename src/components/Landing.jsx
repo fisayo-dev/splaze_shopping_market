@@ -1,3 +1,4 @@
+import { ShoppingBag } from "iconsax-react";
 import landing_social_media from "../assets/app_images/landing_social_media.png";
 const Landing = () => {
   return (
@@ -10,13 +11,12 @@ const Landing = () => {
                 Your All-in-one online store.
               </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
-                sint aspernatur quis, inventore doloribus recusandae mollitia
-                aliquam cumque voluptas fugiat?
+              Empower your choices with thousands of quality products at unbeatable prices-from daily essentials to luxury finds. Your one-stop shop is just a click away.
               </p>
               <div>
-                <button className="px-5 py-3 rounded-full bg-yellow-400">
-                  Start purchasing
+                <button className="px-5 py-3 flex items-center gap-2 rounded-full bg-yellow-400 hover:bg-yellow-300">
+                  <ShoppingBag className="h-6 w-6" />
+                  <p>Start purchasing</p>
                 </button>
               </div>
             </div>
