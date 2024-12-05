@@ -5,9 +5,9 @@ import { useState } from "react";
 const Header = () => {
   const [user, setUser] = useState(false);
   return (
-    <div className="sticky top-0 w-[100vw] overflow-hidden">
-      <div className="py-6 bg-white">
-        <div className="container mx-auto flex items-center justify-between gap-20 md:px-16 px-5">
+    <div className="sticky top-0 ">
+      <div className="py-6 bg-white ">
+        <div className="container mx-auto flex items-center justify-between gap-20 md:px-16 px-5 w-[100vw] overflow-hidden">
           <div className="flex text-black items-center gap-2">
             <ShoppingCartIcon className="w-10 h-10" />
             <h2 className="text-2xl font-bold">Splaze</h2>
