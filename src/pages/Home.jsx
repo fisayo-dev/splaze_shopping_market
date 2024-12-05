@@ -1,10 +1,11 @@
-import { Header, Landing } from "../components";
+import { Header, Landing, TrendingProducts } from "../components";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Landing />
+          <Landing />
+          <TrendingProducts />
     </>
   );
 };
