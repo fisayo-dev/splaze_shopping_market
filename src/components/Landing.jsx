@@ -1,5 +1,6 @@
 import { ShoppingBag } from "iconsax-react";
 import landing_social_media from "../assets/app_images/landing_social_media.png";
+import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 const Landing = () => {
   return (
     <div>
@@ -15,8 +16,8 @@ const Landing = () => {
               </p>
               <div>
                 <button className="px-5 py-3 flex items-center gap-2 rounded-full bg-yellow-400 hover:bg-yellow-300">
-                  <ShoppingBag className="h-6 w-6" />
-                  <p>Start purchasing</p>
+                  <ShoppingBagIcon className="h-6 w-6" />
+                  <p>Start shopping</p>
                 </button>
               </div>
             </div>
