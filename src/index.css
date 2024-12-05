@@ -38,3 +38,6 @@ button {
   border: 2.5px solid rgb(206, 192, 0);
 }
 
+.search-input-grid {
+  grid-template-columns: 1fr 10fr 1fr;
+}

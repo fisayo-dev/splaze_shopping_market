@@ -1,6 +1,4 @@
-import {
-  GlobeEuropeAfricaIcon,
-} from "@heroicons/react/24/outline";
+import { GlobeEuropeAfricaIcon } from "@heroicons/react/24/outline";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { SearchNormal, User } from "iconsax-react";
 const Header = () => {
@@ -12,7 +10,7 @@ const Header = () => {
             <ShoppingCartIcon className="w-10 h-10" />
             <h2 className="text-2xl font-bold">Splaze</h2>
           </div>
-          <div className="hidden md:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
+          <div className="hidden md:grid search-input-grid overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
             <div className="flex px-4 items-center justify-center">
               <select className="flex text-center cursor-pointer" id="">
                 <option>All</option>
@@ -26,7 +24,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search for products, brand and categories"
-              className="text-slate-500 pr-4  w-full text-left"
+              className="text-slate-500 pr-4 w-full text-left"
             />
             <div className="px-5 py-3 rounded-full cursor-pointer bg-yellow-400 hover:bg-yellow-300">
               <SearchNormal className="w-6 h-6 " />
