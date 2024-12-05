@@ -21,8 +21,12 @@ button {
   outline: none;
 }
 
-.app-gray-color {
+.app-gray-color, .hover-app-gray-color {
   background: var(--app-gray);
+}
+
+.hover-dark-app-gray-color, .dark-app-gray-color {
+  background: var(--dark-app-gray);
 }
 
 .search-input-behaviour {
