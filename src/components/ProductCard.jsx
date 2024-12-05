@@ -6,10 +6,10 @@ const ProductCard = ({ title, price, quantityLeft }) => {
     const formatPrice = (price) => {
         const text = '150000'
         const arrayedText = Array.from(text)
-        console.log(arrayedText)
+        // console.log(arrayedText)
 
         
-        console.log(arrayedText)
+        // console.log(arrayedText)
     }
 
 
