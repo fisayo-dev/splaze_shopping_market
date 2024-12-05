@@ -26,7 +26,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search for products, brand and categories"
-              className="text-slate-500 pr-4 w-full text-left"
+              className="text-slate-500 text-[0.9rem] pr-4 w-full text-left"
             />
             <div className="px-5 py-3 rounded-full cursor-pointer bg-yellow-400 hover:bg-yellow-300">
               <SearchNormal className="w-6 h-6 " />
