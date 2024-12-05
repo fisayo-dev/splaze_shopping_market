@@ -1,7 +1,9 @@
 import { GlobeEuropeAfricaIcon } from "@heroicons/react/24/outline";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { SearchNormal, User } from "iconsax-react";
+import { useState } from "react";
 const Header = () => {
+  const [user, setUser] = useState(false);
   return (
     <div className="sticky top-0">
       <div className="py-6 bg-white">
@@ -30,15 +32,31 @@ const Header = () => {
               <SearchNormal className="w-6 h-6 " />
             </div>
           </div>
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center gap-2">
-              <GlobeEuropeAfricaIcon className="w-6 h-6" />
-              <p className="">ENG</p>
-            </div>
-            <User className="w-6 h-6 " />
+          <div className="flex items-center space-x-5">
+            {user && (
+              <>
+                <div className="flex items-center gap-2">
+                  <GlobeEuropeAfricaIcon className="w-6 h-6" />
+                  <p className="">ENG</p>
+                </div>
+                <User className="w-6 h-6 " />
+              </>
+            )}
             <div className="rounded-full cursor-pointer hover:bg-yellow-400 bg-yellow-300 p-3">
               <ShoppingCartIcon className="h-6 w-6 text-black" />
             </div>
+            {!user && (
+              <>
+                <div className="flex items-center gap-1">
+                  <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
+                    Signup
+                  </button>
+                  <button className="px-4 py-3 rounded-full bg-black text-white">
+                    Login
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
