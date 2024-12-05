@@ -1,9 +1,14 @@
-import { GlobeEuropeAfricaIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3BottomRightIcon,
+  GlobeEuropeAfricaIcon,
+} from "@heroicons/react/24/outline";
+import { Bars2Icon } from "@heroicons/react/24/outline";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import { SearchNormal, User } from "iconsax-react";
+import { Menu, SearchNormal, User } from "iconsax-react";
 import { useState } from "react";
 const Header = () => {
   const [user, setUser] = useState(false);
+  const [menuOpen,setMenuOpen] = useState(true)
   return (
     <div className="sticky top-0 ">
       <div className="py-6 bg-white ">
@@ -57,6 +62,7 @@ const Header = () => {
                 </div>
               </>
             )}
+            {menuOpen && <Bars3BottomRightIcon className="h-9 w-9 cursor-pointer " />}
           </div>
         </div>
       </div>
