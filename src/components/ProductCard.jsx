@@ -8,7 +8,7 @@ const ProductCard = ({ title, price, quantityLeft }) => {
   }
 
   return (
-    <div className="rounded-2xl hover:scale-105 transition hover:shadow-md cursor-pointer app-gray-color hover-dark-app-gray-color bg-yellow-200">
+    <div className="rounded-2xl transition hover:shadow-md cursor-pointer app-gray-color hover-dark-app-gray-color bg-yellow-200">
       <img src={landing_social_media} alt="" />
       <div className="grid gap-1 py-5 px-4">
         <h2 className="text-[1.3rem] font-bold">{title}</h2>
