@@ -11,7 +11,7 @@ const TrendingProducts = () => {
             <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-3">
               <div className="rounded-2xl hover:scale-105 transition hover:shadow-md  app-gray-color hover-dark-app-gray-color bg-yellow-200">
                 <img src={landing_social_media} alt="" />
-                <div className="py-5 px-4">
+                <div className="grid gap-1 py-5 px-4">
                   <h2 className="text-[1.3rem] font-bold">Oraimo Head Buds</h2>
                   <div className="flex items-center gap-1">
                     <FaNairaSign />
