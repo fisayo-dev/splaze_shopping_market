@@ -77,6 +77,8 @@ const Signup = () => {
                   type="number"
                   className="w-full"
                   placeholder="Phone Number"
+                  max={10}
+                  min={10}
                 />
               </div>
             </div>
