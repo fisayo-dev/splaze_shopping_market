@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-
+import products from "./products";
 
 const TrendingProducts = () => {
   return (
@@ -9,11 +9,16 @@ const TrendingProducts = () => {
           <h2 className="text-3xl font-bold">Trending Products 🔥🔥</h2>
           <div className="grid mt-10">
             <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-3">
-              {}
-              <ProductCard title="Macbook 16 pro" price="1500000" quantityLeft={23}/>
-              <ProductCard title="Iphone 16" price="1000000" quantityLeft={50}/>
-              <ProductCard title="Oraimo Pluto Headphone" price="30000" quantityLeft={100}/>
-              <ProductCard title="Macbook 16 pro" price="1200000" quantityLeft={5}/>
+              {products.map((product, index) => (
+                <>
+                  <ProductCard
+                    key={index}
+                    title={product.title}
+                    price={product.price}
+                    quantityLeft={product.quantity}
+                  />
+                </>
+              ))}
             </div>
           </div>
         </div>
