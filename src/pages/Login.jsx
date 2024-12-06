@@ -45,21 +45,21 @@ const Signup = () => {
             <p> ------ OR ------</p>
           </div>
           <div className="grid grid-cols-3 gap-2">
-            <div className="rounded-full hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
+            <div className="rounded-full hover:shadow-sm hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 justify-center items-center">
-                <Google className="h-8 w-8" />
+                <Google className="h-6 w-6" />
                 <p>Google</p>
               </div>
             </div>
-            <div className="rounded-full hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
+            <div className="rounded-full hover:shadow-sm hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 justify-center items-center">
-                <FaXTwitter className="h-8 w-8" />
+                <FaXTwitter className="h-6 w-6" />
                 <p>Twitter</p>
               </div>
             </div>
-            <div className="rounded-full hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
+            <div className="rounded-full hover:shadow-sm hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 justify-center items-center">
-                <Instagram className="h-8 w-8" />
+                <Instagram className="h-6 w-6" />
                 <p>Instagram</p>
               </div>
             </div>
