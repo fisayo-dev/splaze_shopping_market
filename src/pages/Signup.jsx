@@ -12,7 +12,7 @@ import { Button } from "../components";
 const Signup = () => {
   return (
     <div className="md:grid form-grid-signup">
-      <div className="md:grid hidden bg-white">
+      <div className="md:grid hidden bg-yellow-50">
         <div className="grid justify-items-center ">
           <img src={landing_social_media} alt="" />
         </div>
