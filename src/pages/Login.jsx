@@ -48,19 +48,19 @@ const Signup = () => {
             <div className="rounded-full hover:shadow-sm hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 justify-center items-center">
                 <Google className="h-6 w-6" />
-                <p>Google</p>
+                <p className="md:block hidden">Google</p>
               </div>
             </div>
             <div className="rounded-full hover:shadow-sm hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 justify-center items-center">
                 <FaXTwitter className="h-6 w-6" />
-                <p>Twitter</p>
+                <p className="md:block hidden">Twitter</p>
               </div>
             </div>
             <div className="rounded-full hover:shadow-sm hover:bg-white cursor-pointer bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 justify-center items-center">
                 <Instagram className="h-6 w-6" />
-                <p>Instagram</p>
+                <p className="md:block hidden">Instagram</p>
               </div>
             </div>
           </div>
