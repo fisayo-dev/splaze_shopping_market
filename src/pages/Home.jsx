@@ -4,8 +4,8 @@ const Home = () => {
   return (
     <>
       <Header />
-          <Landing />
-          <TrendingProducts />
+      <Landing />
+      <TrendingProducts />
     </>
   );
 };
