@@ -25,7 +25,7 @@ const Landing = () => {
               <img
                 src={landing_social_media}
                 alt=""
-                className="ml-auto w-5/6"
+                className="md:ml-auto mx-auto w-5/6"
               />
             </div>
           </div>
