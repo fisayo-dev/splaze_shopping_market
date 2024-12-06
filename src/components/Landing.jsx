@@ -1,4 +1,3 @@
-import { ShoppingBag } from "iconsax-react";
 import landing_social_media from "../assets/app_images/landing_social_media.png";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 const Landing = () => {
