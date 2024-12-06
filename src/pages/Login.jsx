@@ -66,7 +66,7 @@ const Signup = () => {
           </div>
 
           <p className="text-center">
-            New to Splaze, <br /> Why not{" "}
+            New to Splaze, <br /> Why not
             <Link className="font-bold hover:underline" to="/signup">
               become a customer now
             </Link>
