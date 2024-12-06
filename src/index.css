@@ -54,6 +54,7 @@ body {
 
 .form-grid-signup {
   grid-template-columns: 7fr 8fr;
+  @apply items-center;
 }
 
 .input-field-grid {
