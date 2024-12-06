@@ -7,10 +7,11 @@ import { SearchNormal, SearchNormal1, User } from "iconsax-react";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [user, setUser] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenu() {
     if (menuOpen) {
@@ -62,12 +63,16 @@ const Header = () => {
             </div>
             {!user && (
               <div className="hidden sm:flex items-center gap-1">
-                <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
-                  Signup
-                </button>
-                <button className="px-4 py-3 rounded-full bg-black text-white">
-                  Login
-                </button>
+                <Link to="/signup">
+                  <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
+                    Signup
+                  </button>
+                </Link>
+                <Link to="/login">
+                  <button className="px-4 py-3 rounded-full bg-black text-white">
+                    Login
+                  </button>
+                </Link>
               </div>
             )}
             <div onClick={handleMenu}>
@@ -84,14 +89,23 @@ const Header = () => {
               <Logo />
             </div>
             <div className="grid items-center gap-2">
-              <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
+              <Link
+                to="/signup"
+                className="px-4 py-3 text-center rounded-full border-2 border-black  hover:bg-black hover:text-white"
+              >
                 Signup
-              </button>
-              <button className="px-4 py-3 rounded-full bg-black text-white">
+              </Link>
+              <Link
+                t="/login"
+                className="px-4 py-3 text-center rounded-full bg-black text-white"
+              >
                 Login
-              </button>
+              </Link>
             </div>
-            <div onClick={handleMenu} className="flex fixed top-[3%] right-[5%] items-center">
+            <div
+              onClick={handleMenu}
+              className="flex fixed top-[3%] right-[5%] items-center"
+            >
               <XMarkIcon className="w-8 h-8" />
             </div>
           </div>
