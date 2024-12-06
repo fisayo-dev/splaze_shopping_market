@@ -1,14 +1,9 @@
-import { Global, Lock, User } from "iconsax-react";
-import landing_social_media from "../assets/app_images/landing_social_media.png";
 import { Link } from "react-router-dom";
 import {
   EnvelopeIcon,
   KeyIcon,
-  PlusIcon,
   ShoppingCartIcon,
-  UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import { BsTelephone } from "react-icons/bs";
 import { Button } from "../components";
 import signup_image from "../assets/app_images/460.jpg";
 const Signup = () => {
