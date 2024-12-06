@@ -11,6 +11,14 @@ import Logo from "./Logo";
 const Header = () => {
   const [user, setUser] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
+
+  function handleMenu() {
+    if (menuOpen) {
+      setMenuOpen(false);
+    } else {
+      setMenuOpen(true);
+    }
+  }
   return (
     <div className="sticky top-0 ">
       <div className="py-6 bg-transparent backdrop-blur-md ">
@@ -62,31 +70,33 @@ const Header = () => {
                 </button>
               </div>
             )}
-            {menuOpen && (
+            <div onClick={handleMenu}>
               <Bars3BottomRightIcon className="grid sm:hidden h-9 w-9 cursor-pointer " />
-            )}
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="grid place-items-center items-center justify-center fixed top-0 h-[100vh] bg-white p-5 w-full opacity-95 shadow-md">
-        <div className="grid gap-5">
-          <div className="flex items-center gap-2">
-            <Logo />
-          </div>
-          <div className="grid items-center gap-2">
-            <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
-              Signup
-            </button>
-            <button className="px-4 py-3 rounded-full bg-black text-white">
-              Login
-            </button>
-          </div>
-          <div className="flex fixed top-[3%] right-[5%] items-center">
-            <XMarkIcon className="w-8 h-8"/>
+      {menuOpen && (
+        <div className="grid place-items-center items-center justify-center fixed top-0 h-[100vh] bg-white p-5 w-full opacity-95 shadow-md">
+          <div className="grid gap-5">
+            <div className="flex items-center gap-2">
+              <Logo />
+            </div>
+            <div className="grid items-center gap-2">
+              <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
+                Signup
+              </button>
+              <button className="px-4 py-3 rounded-full bg-black text-white">
+                Login
+              </button>
+            </div>
+            <div onClick={handleMenu} className="flex fixed top-[3%] right-[5%] items-center">
+              <XMarkIcon className="w-8 h-8" />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
