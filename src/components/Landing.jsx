@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <div>
       <div className="py-5">
-        <div className="container mx-auto md:px-16 px-5">
+        <div className="container mx-auto 2xl:px-16 md:px-10 px-5">
           <div className="grid md:flex gap-5 md:justify-between items-center">
             <div className="grid gap-4 md:text-left md:place-items-start place-items-center text-center">
               <h2 className="text-6xl capitalize font-bold">

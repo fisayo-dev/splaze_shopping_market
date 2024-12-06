@@ -7,16 +7,16 @@ import { SearchNormal, User } from "iconsax-react";
 import { useState } from "react";
 const Header = () => {
   const [user, setUser] = useState(false);
-  const [menuOpen,setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(true);
   return (
     <div className="sticky top-0 ">
       <div className="py-6 bg-transparent backdrop-blur-md ">
-        <div className="container mx-auto flex items-center justify-between gap-20 md:px-16 px-5 w-[100vw] overflow-hidden">
+        <div className="container mx-auto flex items-center justify-between gap-20 2xl:px-16 md:px-10 px-5 w-[100vw] overflow-hidden">
           <div className="flex text-black items-center gap-2">
             <ShoppingCartIcon className="w-10 h-10" />
             <h2 className="text-2xl font-bold">Splaze</h2>
           </div>
-          <div className="hidden md:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
+          <div className="hidden lg:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
             {/* <div className="flex px-4 items-center justify-center">
               <select className="flex text-center cursor-pointer" id="">
                 <option>All</option>
@@ -50,18 +50,18 @@ const Header = () => {
               <ShoppingCartIcon className="h-6 w-6 text-black" />
             </div>
             {!user && (
-              <>
-                <div className="flex items-center gap-1">
-                  <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
-                    Signup
-                  </button>
-                  <button className="px-4 py-3 rounded-full bg-black text-white">
-                    Login
-                  </button>
-                </div>
-              </>
+              <div className="hidden sm:flex items-center gap-1">
+                <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
+                  Signup
+                </button>
+                <button className="px-4 py-3 rounded-full bg-black text-white">
+                  Login
+                </button>
+              </div>
             )}
-            {menuOpen && <Bars3BottomRightIcon className="h-9 w-9 cursor-pointer " />}
+            {menuOpen && (
+              <Bars3BottomRightIcon className="grid sm:hidden h-9 w-9 cursor-pointer " />
+            )}
           </div>
         </div>
       </div>
