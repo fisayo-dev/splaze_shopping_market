@@ -56,14 +56,14 @@ const Signup = () => {
             <div className="rounded-full bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 items-center">
                 <KeyIcon className="h-6 w-6" />
-                <input type="text" className="w-full" placeholder="Password" />
+                <input type="password" className="w-full" placeholder="Password" />
               </div>
             </div>
             <div className="rounded-full bg-yellow-100 px-4 py-3">
               <div className="flex gap-2 items-center">
                 <Lock className="h-6 w-6" />
                 <input
-                  type="text"
+                  type="password"
                   className="w-full"
                   placeholder="Repeat Password"
                 />
