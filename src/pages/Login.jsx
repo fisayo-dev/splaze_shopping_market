@@ -54,7 +54,7 @@ const Signup = () => {
           </p>
 
           <div className="flex mt-5 justify-content-center">
-            <Button styles="mx-auto">Be a customer</Button>
+            <Button styles="mx-auto">Continue shopping</Button>
           </div>
         </div>
       </div>
