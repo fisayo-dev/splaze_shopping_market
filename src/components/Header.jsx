@@ -46,7 +46,7 @@ const Header = () => {
                 <User className="w-6 h-6 " />
               </>
             )}
-            <div className="flex lg:hidden items-center">
+            <div className="cursor-pointer p-2 rounded-full hover:bg-gray-200 flex lg:hidden items-center">
               <SearchNormal1 className="h-7 w-7"/>
             </div>
             <div className="rounded-full cursor-pointer hover:bg-yellow-400 bg-yellow-300 p-3">
