@@ -45,3 +45,14 @@ body {
 .search-input-grid {
   grid-template-columns: 1fr 10fr 1fr;
 }
+
+.form-grid-signup, .form-grid-login {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form-grid-signup {
+  grid-template-columns: 7fr 8fr;
+}
