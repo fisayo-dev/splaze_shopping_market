@@ -1,5 +1,6 @@
 import landing_social_media from "../assets/app_images/landing_social_media.png";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 const Landing = () => {
   return (
     <div>
@@ -13,12 +14,12 @@ const Landing = () => {
               <p className="sm:text-[0.9rem]">
               Empower your choices with thousands of quality products at unbeatable prices-from daily essentials to luxury finds. Your one-stop shop is just a click away.
               </p>
-              <div>
+              <Link to="/store">
                 <button className="px-5 py-3 flex items-center gap-2 rounded-full bg-yellow-400 hover:bg-yellow-300">
                   <ShoppingBagIcon className="h-6 w-6" />
                   <p>Start shopping</p>
                 </button>
-              </div>
+              </Link>
             </div>
             <div className="grid items-center">
               <img
