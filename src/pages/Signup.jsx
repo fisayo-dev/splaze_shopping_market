@@ -109,6 +109,9 @@ const Signup = () => {
               </div>
             </div>
           </div>
+          <div className="flex justify-items-center">
+            <button></button>
+          </div>
         </div>
       </div>
     </div>
