@@ -8,6 +8,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import { BsTelephone } from "react-icons/bs";
+import { Button } from "../components";
 const Signup = () => {
   return (
     <div className="form-grid-signup">
@@ -109,8 +110,8 @@ const Signup = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-items-center">
-            <button></button>
+          <div className="flex mt-5 justify-content-center">
+            <Button styles="mx-auto">Be a customer</Button>
           </div>
         </div>
       </div>
