@@ -63,5 +63,3 @@ body {
 .country-phone-input-grid {
   grid-template-columns: 1fr 0.2fr 0.9fr;
 }
-
-@media and (max-width:  )
