@@ -56,6 +56,10 @@ body {
   grid-template-columns: 7fr 8fr;
   @apply items-center;
 }
+.form-grid-login {
+  grid-template-columns: 8fr 7fr;
+  @apply items-center;
+}
 
 .input-field-grid {
   grid-template-columns: 3fr 2fr;
