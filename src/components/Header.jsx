@@ -1,10 +1,13 @@
 import {
   Bars3BottomRightIcon,
   GlobeEuropeAfricaIcon,
+  XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { SearchNormal, SearchNormal1, User } from "iconsax-react";
 import { useState } from "react";
+import { ShoppingCartIcon } from "@heroicons/react/24/outline";
+import Logo from "./Logo";
+
 const Header = () => {
   const [user, setUser] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
@@ -12,10 +15,7 @@ const Header = () => {
     <div className="sticky top-0 ">
       <div className="py-6 bg-transparent backdrop-blur-md ">
         <div className="container mx-auto flex items-center justify-between gap-20 2xl:px-16 md:px-10 px-5 w-full overflow-hidden">
-          <div className="flex text-black items-center gap-2">
-            <ShoppingCartIcon className="w-10 h-10" />
-            <h2 className="text-2xl font-bold">Splaze</h2>
-          </div>
+          <Logo />
           <div className="hidden lg:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
             {/* <div className="flex px-4 items-center justify-center">
               <select className="flex text-center cursor-pointer" id="">
@@ -47,7 +47,7 @@ const Header = () => {
               </>
             )}
             <div className="cursor-pointer p-2 rounded-full hover:bg-gray-200 flex lg:hidden items-center">
-              <SearchNormal1 className="h-7 w-7"/>
+              <SearchNormal1 className="h-7 w-7" />
             </div>
             <div className="rounded-full cursor-pointer hover:bg-yellow-400 bg-yellow-300 p-3">
               <ShoppingCartIcon className="h-6 w-6 text-black" />
@@ -65,6 +65,25 @@ const Header = () => {
             {menuOpen && (
               <Bars3BottomRightIcon className="grid sm:hidden h-9 w-9 cursor-pointer " />
             )}
+          </div>
+        </div>
+      </div>
+
+      <div className="grid place-items-center items-center justify-center fixed top-0 h-[100vh] bg-white p-5 w-full opacity-95 shadow-md">
+        <div className="grid gap-5">
+          <div className="flex items-center gap-2">
+            <Logo />
+          </div>
+          <div className="grid items-center gap-2">
+            <button className="px-4 py-3 rounded-full border-2 border-black  hover:bg-black hover:text-white">
+              Signup
+            </button>
+            <button className="px-4 py-3 rounded-full bg-black text-white">
+              Login
+            </button>
+          </div>
+          <div className="flex fixed top-[3%] right-[5%] items-center">
+            <XMarkIcon className="w-8 h-8"/>
           </div>
         </div>
       </div>
