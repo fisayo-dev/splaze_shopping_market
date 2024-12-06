@@ -128,7 +128,7 @@ const Signup = () => {
           <p className="text-center">
             Already have an account, <br /> 
             <Link className="font-bold hover:underline" to="/login">
-              continue shopping
+              Continue shopping
             </Link>
           </p>
           <div className="flex mt-5 justify-content-center">
