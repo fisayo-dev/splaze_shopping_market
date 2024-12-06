@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="sticky top-0 ">
       <div className="py-6 bg-transparent backdrop-blur-md ">
-        <div className="container mx-auto flex items-center justify-between gap-20 2xl:px-16 md:px-10 px-5 w-[100vw] overflow-hidden">
+        <div className="container mx-auto flex items-center justify-between gap-20 2xl:px-16 md:px-10 px-5 w-full overflow-hidden">
           <div className="flex text-black items-center gap-2">
             <ShoppingCartIcon className="w-10 h-10" />
             <h2 className="text-2xl font-bold">Splaze</h2>

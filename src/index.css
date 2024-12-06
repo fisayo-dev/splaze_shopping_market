@@ -21,6 +21,10 @@ button {
   outline: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .app-gray-color, .hover-app-gray-color {
   background: var(--app-gray);
 }
