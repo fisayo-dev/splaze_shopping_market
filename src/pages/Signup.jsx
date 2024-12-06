@@ -1,5 +1,5 @@
 import { Global, Lock, User } from "iconsax-react";
-import landing_social_media from "../assets/app_images/landing_social_media.png";
+import { Link } from "react-router-dom";
 import {
   EnvelopeIcon,
   KeyIcon,
@@ -125,7 +125,12 @@ const Signup = () => {
               </div>
             </div>
           </div>
-
+          <p className="text-center">
+            Already have an account, <br /> 
+            <Link className="font-bold hover:underline" to="/login">
+              continue shopping
+            </Link>
+          </p>
           <div className="flex mt-5 justify-content-center">
             <Button styles="mx-auto">Be a customer</Button>
           </div>
