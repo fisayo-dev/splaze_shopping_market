@@ -3,7 +3,7 @@ import {
   GlobeEuropeAfricaIcon,
 } from "@heroicons/react/24/outline";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import { SearchNormal, User } from "iconsax-react";
+import { SearchNormal, SearchNormal1, User } from "iconsax-react";
 import { useState } from "react";
 const Header = () => {
   const [user, setUser] = useState(false);
@@ -46,6 +46,9 @@ const Header = () => {
                 <User className="w-6 h-6 " />
               </>
             )}
+            <div className="flex lg:hidden items-center">
+              <SearchNormal1 className="h-7 w-7"/>
+            </div>
             <div className="rounded-full cursor-pointer hover:bg-yellow-400 bg-yellow-300 p-3">
               <ShoppingCartIcon className="h-6 w-6 text-black" />
             </div>
