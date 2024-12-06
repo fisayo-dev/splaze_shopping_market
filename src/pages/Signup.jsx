@@ -24,7 +24,7 @@ const Signup = () => {
             <h2 className="text-3xl font-bold">Splaze</h2>
           </div>
           <h2 className="text-xl">Register an account with us ?</h2>
-          <div className="grid gap-4 md:w-4/5 mx-auto">
+          <div className="grid text-[0.97rem] gap-4 md:w-4/5 mx-auto">
             <div className="grid grid-cols-2 gap-2">
               <div className="rounded-full bg-yellow-100 px-4 py-3">
                 <div className="flex gap-2 items-center">
