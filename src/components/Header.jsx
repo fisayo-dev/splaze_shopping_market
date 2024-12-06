@@ -2,9 +2,8 @@ import {
   Bars3BottomRightIcon,
   GlobeEuropeAfricaIcon,
 } from "@heroicons/react/24/outline";
-import { Bars2Icon } from "@heroicons/react/24/outline";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import { Menu, SearchNormal, User } from "iconsax-react";
+import { SearchNormal, User } from "iconsax-react";
 import { useState } from "react";
 const Header = () => {
   const [user, setUser] = useState(false);
