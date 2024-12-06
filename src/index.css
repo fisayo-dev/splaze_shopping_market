@@ -56,3 +56,7 @@ body {
 .form-grid-signup {
   grid-template-columns: 7fr 8fr;
 }
+
+.input-field-grid {
+  grid-template-columns: 3fr 2fr;
+}
