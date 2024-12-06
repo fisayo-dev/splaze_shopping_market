@@ -9,12 +9,13 @@ import {
 } from "@heroicons/react/24/outline";
 import { BsTelephone } from "react-icons/bs";
 import { Button } from "../components";
+import signup_image from '../assets/app_images/landing_social_media.png'
 const Signup = () => {
   return (
     <div className="md:grid form-grid-signup">
       <div className="md:grid hidden bg-yellow-50">
         <div className="grid justify-items-center ">
-          <img src={landing_social_media} alt="" />
+          <img src={signup_image} alt="" />
         </div>
       </div>
       <div className="md:p-3 p-[1.5rem] bg-yellow-300">
