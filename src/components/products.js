@@ -1,4 +1,4 @@
-const product = [
+const products = [
     {
         title: "Asus Zenbook OLed Fold",
         description: "Lorem ispum dor lor sit amet conseputeur",
@@ -36,3 +36,5 @@ const product = [
         quantity: 500, 
     },
 ]
+
+export default products
