@@ -60,3 +60,7 @@ body {
 .input-field-grid {
   grid-template-columns: 3fr 2fr;
 }
+
+.country-phone-input-grid {
+  grid-template-columns: 1fr 0.2fr 0.9fr;
+}
