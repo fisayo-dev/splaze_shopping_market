@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import { PiDress } from "react-icons/pi";
 import { FaLaptop } from "react-icons/fa6";
 import { CiFootball } from "react-icons/ci";
-import { FaUtensilSpoon } from "react-icons/fa";
 import { BuildingStorefrontIcon, ViewColumnsIcon } from "@heroicons/react/24/outline";
 const StoreSideBar = () => {
   return (
