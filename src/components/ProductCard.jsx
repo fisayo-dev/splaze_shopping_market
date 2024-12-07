@@ -16,7 +16,7 @@ const ProductCard = ({ title, price, quantityLeft }) => {
           <FaNairaSign />
           <p>{formatPrice(price)}</p>
         </div>
-        <p className="text-sm">
+        <p className="text-[0.85rem]">
           {quantityLeft} {quantityLeft > 1 ? "items" : "item"} left
         </p>
       </div>

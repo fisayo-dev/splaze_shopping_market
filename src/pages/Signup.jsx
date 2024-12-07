@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { BsTelephone } from "react-icons/bs";
 import { Button } from "../components";
-import signup_image from '../assets/app_images/460.jpg'
+import signup_image from "../assets/app_images/460.jpg";
 const Signup = () => {
   return (
     <div className="md:grid form-grid-signup">
@@ -126,7 +126,7 @@ const Signup = () => {
             </div>
           </div>
           <p className="text-center">
-            Already have an account, <br /> 
+            Already have an account, <br />
             <Link className="font-bold hover:underline" to="/login">
               Continue shopping
             </Link>
