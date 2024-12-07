@@ -8,10 +8,10 @@ const Landing = () => {
         <div className="container mx-auto 2xl:px-16 md:px-10 px-5">
           <div className="grid md:flex gap-5 md:justify-between items-center">
             <div className="grid gap-4 md:text-left md:place-items-start place-items-center text-center">
-              <h2 className="lg:text-6xl text-5xl capitalize font-bold">
+              <h2 className="lg:text-5xl text-4xl capitalize font-bold">
                 Your All-in-one online store.
               </h2>
-              <p className="sm:text-[0.9rem]">
+              <p className="text-[0.82rem] sm:text-[0.9rem]">
               Empower your choices with thousands of quality products at unbeatable prices-from daily essentials to luxury finds. Your one-stop shop is just a click away.
               </p>
               <Link to="/store">
