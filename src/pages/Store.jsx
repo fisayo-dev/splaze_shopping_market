@@ -2,10 +2,10 @@ import { StoreSideBar } from "../components";
 
 const Store = () => {
   return (
-    <div>
+    <div className="store-sidebar-grid">
       <StoreSideBar />
       <div className="py-5">
-        <div className="container mx-auto 2xl:px-16 md:px-10 px-5"></div>
+        <div className="grid"></div>
       </div>
     </div>
   );

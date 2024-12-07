@@ -1,7 +1,12 @@
+import Logo from "./Logo";
 const StoreSideBar = () => {
   return (
-    <div>StoreSideBar</div>
-  )
-}
+    <div className="bg-yellow-300 h-[100vh]">
+      <div className="p-8">
+        <Logo />
+      </div>
+    </div>
+  );
+};
 
-export default StoreSideBar
+export default StoreSideBar;

@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import { Home,Login,NotFound,Signup } from "./pages";
+import { Home,Login,NotFound,Signup, Store } from "./pages";
 
 function App() {
   const router = createBrowserRouter(
@@ -15,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<NotFound/>} />
+        <Route path="/store" element={<Store/>} />
       </>
     ));
 

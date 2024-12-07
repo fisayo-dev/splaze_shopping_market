@@ -68,3 +68,8 @@ body {
 .country-phone-input-grid {
   grid-template-columns: 1fr 0.2fr 0.9fr;
 }
+
+.store-sidebar-grid  {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
