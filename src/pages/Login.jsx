@@ -14,10 +14,10 @@ const Signup = () => {
     <div className="md:grid form-grid-login">
       <div className="md:p-3 p-[1.5rem] bg-yellow-300">
         <div className="grid h-[100vh] text-center place-content-center gap-4">
-          <div className="flex mx-auto text-black items-center gap-2">
-            <ShoppingCartIcon className="w-12 h-12" />
-            <h2 className="text-3xl font-bold">Splaze</h2>
-          </div>
+          <Link to="/" className="flex mx-auto text-black items-center gap-2">
+              <ShoppingCartIcon className="w-12 h-12" />
+              <h2 className="text-3xl font-bold">Splaze</h2>
+            </Link>
           <h2 className="text-xl">I'm glad to have you back </h2>
           <div className="grid text-[0.97rem] gap-4 md:w-4/5 mx-auto">
             <div className="grid gap-4 w-full">
