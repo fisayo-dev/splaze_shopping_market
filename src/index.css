@@ -73,3 +73,15 @@ body {
   display: grid;
   grid-template-columns: 2fr 6fr;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fafafa;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-yellow-300 shadow-lg rounded-full
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-yellow-400 cursor-pointer;
+}
