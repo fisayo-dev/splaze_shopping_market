@@ -96,7 +96,7 @@ const Header = () => {
                 Signup
               </Link>
               <Link
-                t="/login"
+                to="/login"
                 className="px-4 py-3 text-center rounded-full bg-black text-white"
               >
                 Login
