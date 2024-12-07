@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="sticky top-0 ">
       <div className="py-6 bg-transparent backdrop-blur-md ">
-        <div className="container mx-auto flex items-center justify-between gap-20 2xl:px-16 md:px-10 px-5 w-full overflow-hidden">
+        <div className="container mx-auto flex items-center justify-between gap-7 2xl:px-16 md:px-10 px-5 overflow-hidden">
           <Logo />
           <div className="hidden lg:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
             {/* <div className="flex px-4 items-center justify-center">
@@ -45,7 +45,7 @@ const Header = () => {
               <SearchNormal className="w-6 h-6 " />
             </div>
           </div>
-          <div className="flex items-center space-x-5">
+          <div className="flex items-center space-x-3">
             {user && (
               <>
                 <div className="flex items-center gap-2">
