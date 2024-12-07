@@ -4,5 +4,6 @@ import TrendingProducts from "./TrendingProducts";
 import ProductCard from "./ProductCard";
 import Logo from "./Logo";
 import Button from "./Button";
+import StoreSideBar from "./StoreSideBar";
 
-export {Header, Landing, TrendingProducts, ProductCard, Logo, Button}
+export {Header, Landing, TrendingProducts, StoreSideBar, ProductCard, Logo, Button}
