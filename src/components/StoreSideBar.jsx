@@ -1,6 +1,10 @@
-import { Copyright, Electricity } from "iconsax-react";
+import { Book, Copyright, Electricity, Heart } from "iconsax-react";
 import Logo from "./Logo";
 import { PiDress } from "react-icons/pi";
+import { FaLaptop } from "react-icons/fa6";
+import { CiFootball } from "react-icons/ci";
+import { FaUtensilSpoon } from "react-icons/fa";
+import { BuildingStorefrontIcon } from "@heroicons/react/24/outline";
 const StoreSideBar = () => {
   return (
     <div className="bg-yellow-300 h-[100vh]">
@@ -22,31 +26,31 @@ const StoreSideBar = () => {
             </div>
             <div className="bg-yellow-200 rounded-xl px-4 py-3">
               <div className="flex items-center gap-2">
-                <Electricity className="h-6 w-6" />
+                <BuildingStorefrontIcon className="h-6 w-6" />
                 <p>Home and Kitchen</p>
               </div>
             </div>
             <div className="bg-yellow-200 rounded-xl px-4 py-3">
               <div className="flex items-center gap-2">
-                <Electricity className="h-6 w-6" />
+                <Heart className="h-6 w-6" />
                 <p>Health and Beauty</p>
               </div>
             </div>
             <div className="bg-yellow-200 rounded-xl px-4 py-3">
               <div className="flex items-center gap-2">
-                <Electricity className="h-6 w-6" />
+                <CiFootball className="h-6 w-6" />
                 <p>Sports and Outdoors</p>
               </div>
             </div>
             <div className="bg-yellow-200 rounded-xl px-4 py-3">
               <div className="flex items-center gap-2">
-                <Electricity className="h-6 w-6" />
+                <Book className="h-6 w-6" />
                 <p>Books</p>
               </div>
             </div>
             <div className="bg-yellow-200 rounded-xl px-4 py-3">
               <div className="flex items-center gap-2">
-                <Electricity className="h-6 w-6" />
+                <FaLaptop className="h-6 w-6" />
                 <p>Gadgets and Devices</p>
               </div>
             </div>
