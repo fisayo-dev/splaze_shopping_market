@@ -20,10 +20,10 @@ const Signup = () => {
       </div>
       <div className="md:p-3 p-[1.5rem] bg-yellow-300">
         <div className="grid h-[100vh] text-center place-content-center gap-4">
-          <div className="flex mx-auto text-black items-center gap-2">
+          <Link to="/" className="flex mx-auto text-black items-center gap-2">
             <ShoppingCartIcon className="w-12 h-12" />
             <h2 className="text-3xl font-bold">Splaze</h2>
-          </div>
+          </Link>
           <h2 className="text-xl">Register an account with us ?</h2>
           <div className="grid text-[0.97rem] gap-4 md:w-4/5 mx-auto">
             <div className="grid grid-cols-2 gap-2">
