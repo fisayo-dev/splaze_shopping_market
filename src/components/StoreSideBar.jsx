@@ -4,7 +4,7 @@ import { PiDress } from "react-icons/pi";
 import { FaLaptop } from "react-icons/fa6";
 import { CiFootball } from "react-icons/ci";
 import { FaUtensilSpoon } from "react-icons/fa";
-import { BuildingStorefrontIcon } from "@heroicons/react/24/outline";
+import { BuildingStorefrontIcon, ViewColumnsIcon } from "@heroicons/react/24/outline";
 const StoreSideBar = () => {
   return (
     <div className="bg-yellow-300 h-[100vh]">
@@ -12,6 +12,12 @@ const StoreSideBar = () => {
         <div className="grid gap-10">
           <Logo />
           <div className="grid gap-2">
+            <div className="bg-white shadow-sm rounded-xl px-4 py-3">
+              <div className="flex items-center gap-2">
+                <ViewColumnsIcon className="h-6 w-6" />
+                <p>All</p>
+              </div>
+            </div>
             <div className="bg-yellow-200 rounded-xl px-4 py-3">
               <div className="flex items-center gap-2">
                 <Electricity className="h-6 w-6" />
