@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import { Book, Electricity, Heart, SearchNormal } from "iconsax-react";
+import { Book, Electricity, Filter, Heart, SearchNormal } from "iconsax-react";
 import { PiDress } from "react-icons/pi";
 import { FaLaptop } from "react-icons/fa6";
 import { CiFootball } from "react-icons/ci";
@@ -32,22 +32,28 @@ const StoreContentHeader = ({ category }) => {
   ];
 
   return (
-    <div className="flex justify-between items-center gap-10">
-      <div className="flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
-        <div className="px-2 py-3">
-          {listOfCategories.map((item, index) => {
-            if (item == category) {
-              return listOfCategoryIcons[index];
-            }
-          })}
+    <div className="flex justify-stretch md:justify-between items-center gap-10">
+      <div className="w-full flex items-center gap-2">
+        <div className="grid md:hidden px-2 py-3 text-slate-700 hover:text-black cursor-pointer">
+          <Filter className="h-6 w-6" />
         </div>
-        <input
-          type="text"
-          placeholder="Search Splaze"
-          className="text-slate-500 px-4 w-full text-left"
-        />
-        <div className="px-5 py-3 rounded-full cursor-pointer bg-yellow-400 hover:bg-yellow-300">
-          <SearchNormal className="w-6 h-6 " />
+        <div className="flex text-[0.95rem] md:text-[1rem] overflow-hidden search-input-behaviour w-full rounded-full px-2 py-1 md:px-3 md:py-2">
+          <div className="px-2 py-3">
+            {listOfCategories.map((item, index) => {
+              if (item == category) {
+                return listOfCategoryIcons[index];
+              }
+            })}
+          </div>
+
+          <input
+            type="text"
+            placeholder="Search Splaze"
+            className="text-slate-500 px-1 md:px-4 w-full text-left"
+          />
+          <div className="px-5 py-3 rounded-full cursor-pointer bg-yellow-400 hover:bg-yellow-300">
+            <SearchNormal className="w-6 h-6 " />
+          </div>
         </div>
       </div>
       <div className="flex items-center gap-2">
