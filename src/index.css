@@ -84,3 +84,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-yellow-400 cursor-pointer;
 }
+
+.mobile-category-list::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-category-list{
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
