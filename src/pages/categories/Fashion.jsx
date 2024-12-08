@@ -6,7 +6,7 @@ const Fashion = () => {
       <StoreSideBar />
       <div className="p-6 overflow-y-scroll overflow-x-hidden">
         <div className="grid">
-         <StoreContentHeader />
+         <StoreContentHeader category="fashion"/>
         </div>
       </div>
     </div>

@@ -1,13 +1,45 @@
-import { Electricity, SearchNormal } from "iconsax-react";
 import { Link } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
+import { Book, Electricity, Heart, SearchNormal } from "iconsax-react";
+import { PiDress } from "react-icons/pi";
+import { FaLaptop } from "react-icons/fa6";
+import { CiFootball } from "react-icons/ci";
+import {
+  BuildingStorefrontIcon,
+  ViewColumnsIcon,
+} from "@heroicons/react/24/outline";
 
-const StoreContentHeader = () => {
+const StoreContentHeader = ({ category }) => {
+  const listOfCategories = [
+    "all",
+    "electronics",
+    "fashion",
+    "home-and-kitchen",
+    "health-and-beauty",
+    "sports-and-outdoors",
+    "books",
+    "gadgets-and-devices",
+  ];
+  const listOfCategoryIcons = [
+    <ViewColumnsIcon className="h-6 w-6 text-slate-700" />,
+    <Electricity className="h-6 w-6 text-slate-700" />,
+    <PiDress className="h-6 w-6 text-slate-700" />,
+    <BuildingStorefrontIcon className="h-6 w-6 text-slate-700" />,
+    <Heart className="h-6 w-6 text-slate-700" />,
+    <CiFootball className="h-6 w-6 text-slate-700" />,
+    <Book className="h-6 w-6 text-slate-700" />,
+    <FaLaptop className="h-6 w-6 text-slate-700" />,
+  ];
+
   return (
     <div className="flex justify-between items-center gap-10">
       <div className="hidden lg:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
         <div className="px-2 py-3">
-          <Electricity />
+          {listOfCategories.map((item, index) => {
+            if (item == category) {
+              return listOfCategoryIcons[index];
+            }
+          })}
         </div>
         <input
           type="text"

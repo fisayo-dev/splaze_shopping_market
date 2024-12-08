@@ -1,7 +1,7 @@
 import { Book, Copyright, Electricity, Heart } from "iconsax-react";
 import Logo from "./Logo";
 import { PiDress } from "react-icons/pi";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaLaptop } from "react-icons/fa6";
 import { CiFootball } from "react-icons/ci";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 const StoreSideBar = () => {
-  const linkStatus = ({isActive}) =>
+  const linkStatus = ({ isActive }) =>
     isActive
       ? "bg-white shadow-sm rounded-xl px-4 cursor-pointer py-3"
       : "bg-yellow-200 hover:bg-white hover:bg-opacity-65 cursor-pointer rounded-xl px-4 py-3";
