@@ -70,7 +70,6 @@ body {
 }
 
 .store-sidebar-grid  {
-  display: grid;
   grid-template-columns: 2fr 6fr;
 }
 

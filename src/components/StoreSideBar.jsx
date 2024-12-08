@@ -15,7 +15,7 @@ const StoreSideBar = () => {
       ? "bg-white shadow-sm rounded-xl px-4 cursor-pointer py-3"
       : "bg-yellow-200 hover:bg-white hover:bg-opacity-65 cursor-pointer rounded-xl px-4 py-3";
   return (
-    <div className="bg-yellow-300 h-[100vh]">
+    <div className="hidden md:grid  2x:w-1/10 md:w-2/5 bg-yellow-300 h-[100vh]">
       <div className="p-8">
         <div className="grid gap-10">
           <Logo />

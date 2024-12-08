@@ -33,7 +33,7 @@ const StoreContentHeader = ({ category }) => {
 
   return (
     <div className="flex justify-between items-center gap-10">
-      <div className="hidden lg:flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
+      <div className="flex overflow-hidden search-input-behaviour w-full rounded-full px-3 py-2">
         <div className="px-2 py-3">
           {listOfCategories.map((item, index) => {
             if (item == category) {
