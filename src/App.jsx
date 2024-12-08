@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/store" element={<Store />} />
+        <Route path="/store/all" element={<Store />} />
         <Route path="/store/fashion" element={<Fashion />} />
         <Route path="/store/electronics" element={<Electronics />} />
         <Route path="/store/home-and-kitchen" element={<HomeAndKitchen />} />
