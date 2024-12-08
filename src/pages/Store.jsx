@@ -1,4 +1,4 @@
-import { StoreSideBar } from "../components";
+import { StoreContentHeader, StoreSideBar } from "../components";
 
 const Store = () => {
   return (
@@ -6,7 +6,7 @@ const Store = () => {
       <StoreSideBar />
       <div className="p-6 overflow-y-scroll overflow-x-hidden">
         <div className="grid">
-         
+          <StoreContentHeader />
         </div>
       </div>
     </div>
